@@ -1,0 +1,16 @@
+[package]
+name = "forge-automation"
+description = "Typed automation rules and dry-run evaluation for ForgePulse"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+forge-core = { path = "../forge-core" }
+serde.workspace = true
+uuid.workspace = true
+
+[lints]
+workspace = true
+

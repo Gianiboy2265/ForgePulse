@@ -1,0 +1,20 @@
+[package]
+name = "forge-ui"
+description = "ForgePulse Tauri desktop shell"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[build-dependencies]
+tauri-build.workspace = true
+
+[dependencies]
+forge-core = { path = "../../crates/forge-core" }
+forge-security = { path = "../../crates/forge-security" }
+serde.workspace = true
+tauri.workspace = true
+
+[lints]
+workspace = true
+

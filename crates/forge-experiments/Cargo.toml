@@ -1,0 +1,18 @@
+[package]
+name = "forge-experiments"
+description = "Reversible experiment state machine for ForgePulse"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+forge-core = { path = "../forge-core" }
+serde.workspace = true
+serde_json.workspace = true
+uuid.workspace = true
+
+[lints]
+workspace = true
+

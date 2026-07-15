@@ -1,0 +1,15 @@
+[package]
+name = "forge-benchmark"
+description = "Statistical comparison engine for ForgePulse"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+forge-core = { path = "../forge-core" }
+serde.workspace = true
+
+[lints]
+workspace = true
+

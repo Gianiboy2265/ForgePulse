@@ -1,0 +1,18 @@
+[package]
+name = "forge-windows"
+description = "Documented Windows API collectors for ForgePulse"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+forge-core = { path = "../forge-core" }
+forge-monitor = { path = "../forge-monitor" }
+tracing.workspace = true
+windows.workspace = true
+
+[lints]
+workspace = true
+

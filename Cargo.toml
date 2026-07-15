@@ -1,0 +1,75 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/forge-core",
+    "crates/forge-monitor",
+    "crates/forge-events",
+    "crates/forge-storage",
+    "crates/forge-analysis",
+    "crates/forge-benchmark",
+    "crates/forge-experiments",
+    "crates/forge-profiles",
+    "crates/forge-automation",
+    "crates/forge-network",
+    "crates/forge-hardware",
+    "crates/forge-windows",
+    "crates/forge-security",
+    "crates/forge-export",
+    "crates/forge-service",
+    "crates/forge-cli",
+    "forge-ui/src-tauri",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+license = "AGPL-3.0-or-later"
+authors = ["ForgePulse contributors"]
+repository = "https://github.com/forgepulse/forgepulse"
+
+[workspace.dependencies]
+async-trait = "0.1"
+base64 = "0.22"
+chrono = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive"] }
+directories = "6"
+hex = "0.4"
+hmac = "0.12"
+getrandom = "0.4"
+parking_lot = "0.12"
+regex = "1"
+rmp-serde = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+sqlx = { version = "0.8", default-features = false, features = ["runtime-tokio", "sqlite", "migrate", "macros", "chrono", "uuid"] }
+subtle = "2"
+tauri = "2"
+tauri-build = "2"
+thiserror = "2"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "net", "io-util", "sync", "signal", "time", "fs"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter", "fmt"] }
+uuid = { version = "1", features = ["v4", "serde"] }
+windows = { version = "0.61", features = [
+    "Win32_Foundation",
+    "Win32_Security",
+    "Win32_Security_Authorization",
+    "Win32_System_ProcessStatus",
+    "Win32_System_SystemInformation",
+    "Win32_System_Threading",
+] }
+windows-service = "0.8"
+zeroize = { version = "1", features = ["zeroize_derive"] }
+zstd = "0.13"
+
+[workspace.lints.rust]
+unsafe_op_in_unsafe_fn = "deny"
+missing_debug_implementations = "warn"
+
+[workspace.lints.clippy]
+all = { level = "warn", priority = -1 }
+unwrap_used = "deny"
+expect_used = "deny"
+panic = "deny"

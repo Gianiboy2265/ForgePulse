@@ -1,0 +1,9 @@
+/target/
+/forge-ui/node_modules/
+/forge-ui/dist/
+*.db
+*.db-shm
+*.db-wal
+*.log
+.env
+

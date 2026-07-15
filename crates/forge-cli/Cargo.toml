@@ -1,0 +1,23 @@
+[package]
+name = "forge-cli"
+description = "ForgePulse command-line client"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "forgepulse"
+path = "src/main.rs"
+
+[dependencies]
+clap.workspace = true
+forge-core = { path = "../forge-core" }
+forge-security = { path = "../forge-security" }
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+
+[lints]
+workspace = true
+

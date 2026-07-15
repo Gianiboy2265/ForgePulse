@@ -1,0 +1,16 @@
+[package]
+name = "forge-hardware"
+description = "Hardware identity and capability models for ForgePulse"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+serde.workspace = true
+uuid.workspace = true
+
+[lints]
+workspace = true
+

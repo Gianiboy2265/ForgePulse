@@ -1,0 +1,18 @@
+[package]
+name = "forge-export"
+description = "Local report generation and anonymization for ForgePulse"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+forge-analysis = { path = "../forge-analysis" }
+forge-core = { path = "../forge-core" }
+regex.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+
+[lints]
+workspace = true

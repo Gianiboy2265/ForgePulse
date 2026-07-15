@@ -1,0 +1,17 @@
+[package]
+name = "forge-analysis"
+description = "Deterministic incident and evidence analysis for ForgePulse"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[dependencies]
+chrono.workspace = true
+forge-core = { path = "../forge-core" }
+serde.workspace = true
+uuid.workspace = true
+
+[lints]
+workspace = true
+
